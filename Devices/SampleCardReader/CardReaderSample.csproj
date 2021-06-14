@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <AssemblyName>XFS4IoT.SP.CardReader</AssemblyName>
     <RootNamespace>KAL.XFS4IoTSP.CardReader.Sample</RootNamespace>
   </PropertyGroup>
