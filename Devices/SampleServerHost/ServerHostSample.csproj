@@ -22,6 +22,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\SampleCardReader\CardReaderSample.csproj" />
+      <ProjectReference Include="..\SampleCashDispenser\CashDispenserSample.csproj" />
     </ItemGroup>
 
     <ItemGroup>
