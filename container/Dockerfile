@@ -6,8 +6,8 @@ MAINTAINER Daniel Schaefer <daniel.schaefer@redhat.com>
 # Here should be meaningful labels. At least "name", "vendor", "version", "release", "summary" and "description" are required for Red Hat image certication.
 LABEL name="XFS4IoT_SP-Dev-Samples-Host" \
       vendor="KAL & Red Hat" \
-      version="0.0.1-alpha.2" \
-      release="SP-Dev 0.0.1" \
+      version="0.0.2-alpha.2" \
+      release="SP-Dev 0.0.2" \
       summary="XFS4IoT server image with simulated card reader" \
       description="XFS4IoT server image with simulated card reader based on KAL XFS4IoT SP-Dev Framework samples."
 
@@ -22,8 +22,10 @@ COPY licenses /licenses
 # Include application
 COPY app /opt/app-root/app
 
-# Exposed Port that as per server properties in launchSettings.json
-EXPOSE 8088
+# Exposed Ports
+EXPOSE 5846-5856
+EXPOSE 80
+EXPOSE 443
 
 # Good practice not to run as root
 USER 1001
