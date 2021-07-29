@@ -8,17 +8,18 @@
     ".NETCoreApp,Version=v5.0": {
       "XFS4IoT.SP.ServerHostSample/1.0.0": {
         "dependencies": {
-          "XFS4IoT.SP.CardReader": "1.0.0"
+          "XFS4IoT.SP.CardReader": "1.0.0",
+          "XFS4IoT.SP.CashDispenser": "1.0.0"
         },
         "runtime": {
           "XFS4IoT.SP.ServerHostSample.dll": {}
         }
       },
-      "KAL.XFS4IoT.SP-Dev.Framework.CardReader/0.0.1-alpha.2": {
+      "KAL.XFS4IoT.SP-Dev.Framework.CardReader/0.0.2-alpha.1": {
         "dependencies": {
-          "KAL.XFS4IoT.SP-Dev.Framework.Common": "0.0.1-alpha.2",
-          "KAL.XFS4IoT.SP-Dev.Framework.Server": "0.0.1-alpha.2",
-          "KAL.XFS4IoT.SP-Dev.Framework.ServiceInterfaces": "0.0.1-alpha.2"
+          "KAL.XFS4IoT.SP-Dev.Framework.Common": "0.0.2-alpha.1",
+          "KAL.XFS4IoT.SP-Dev.Framework.Server": "0.0.2-alpha.1",
+          "KAL.XFS4IoT.SP-Dev.Framework.ServiceInterfaces": "0.0.2-alpha.1"
         },
         "runtime": {
           "lib/net5.0/XFS4IoT.SP.Framework.CardReader.dll": {
@@ -27,10 +28,37 @@
           }
         }
       },
-      "KAL.XFS4IoT.SP-Dev.Framework.Common/0.0.1-alpha.2": {
+      "KAL.XFS4IoT.SP-Dev.Framework.CashDispenser/0.0.2-alpha.1": {
         "dependencies": {
-          "KAL.XFS4IoT.SP-Dev.Framework.Server": "0.0.1-alpha.2",
-          "KAL.XFS4IoT.SP-Dev.Framework.ServiceInterfaces": "0.0.1-alpha.2"
+          "KAL.XFS4IoT.SP-Dev.Framework.CashManagement": "0.0.2-alpha.1",
+          "KAL.XFS4IoT.SP-Dev.Framework.Common": "0.0.2-alpha.1",
+          "KAL.XFS4IoT.SP-Dev.Framework.Server": "0.0.2-alpha.1",
+          "KAL.XFS4IoT.SP-Dev.Framework.ServiceInterfaces": "0.0.2-alpha.1"
+        },
+        "runtime": {
+          "lib/net5.0/XFS4IoT.SP.Framework.CashDispenser.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "KAL.XFS4IoT.SP-Dev.Framework.CashManagement/0.0.2-alpha.1": {
+        "dependencies": {
+          "KAL.XFS4IoT.SP-Dev.Framework.Common": "0.0.2-alpha.1",
+          "KAL.XFS4IoT.SP-Dev.Framework.Server": "0.0.2-alpha.1",
+          "KAL.XFS4IoT.SP-Dev.Framework.ServiceInterfaces": "0.0.2-alpha.1"
+        },
+        "runtime": {
+          "lib/net5.0/XFS4IoT.SP.Framework.CashManagement.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "KAL.XFS4IoT.SP-Dev.Framework.Common/0.0.2-alpha.1": {
+        "dependencies": {
+          "KAL.XFS4IoT.SP-Dev.Framework.Server": "0.0.2-alpha.1",
+          "KAL.XFS4IoT.SP-Dev.Framework.ServiceInterfaces": "0.0.2-alpha.1"
         },
         "runtime": {
           "lib/net5.0/XFS4IoT.SP.Framework.Common.dll": {
@@ -39,7 +67,7 @@
           }
         }
       },
-      "KAL.XFS4IoT.SP-Dev.Framework.Core/0.0.1-alpha.2": {
+      "KAL.XFS4IoT.SP-Dev.Framework.Core/0.0.2-alpha.1": {
         "runtime": {
           "lib/net5.0/XFS4IoT.SP.Framework.Core.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -47,9 +75,9 @@
           }
         }
       },
-      "KAL.XFS4IoT.SP-Dev.Framework.Server/0.0.1-alpha.2": {
+      "KAL.XFS4IoT.SP-Dev.Framework.Server/0.0.2-alpha.1": {
         "dependencies": {
-          "KAL.XFS4IoT.SP-Dev.Framework.Core": "0.0.1-alpha.2",
+          "KAL.XFS4IoT.SP-Dev.Framework.Core": "0.0.2-alpha.1",
           "System.Configuration.ConfigurationManager": "5.0.0"
         },
         "runtime": {
@@ -59,9 +87,9 @@
           }
         }
       },
-      "KAL.XFS4IoT.SP-Dev.Framework.ServiceInterfaces/0.0.1-alpha.2": {
+      "KAL.XFS4IoT.SP-Dev.Framework.ServiceInterfaces/0.0.2-alpha.1": {
         "dependencies": {
-          "KAL.XFS4IoT.SP-Dev.Framework.Server": "0.0.1-alpha.2"
+          "KAL.XFS4IoT.SP-Dev.Framework.Server": "0.0.2-alpha.1"
         },
         "runtime": {
           "lib/net5.0/XFS4IoT.SP.Framework.ServiceInterfaces.dll": {
@@ -183,10 +211,19 @@
       },
       "XFS4IoT.SP.CardReader/1.0.0": {
         "dependencies": {
-          "KAL.XFS4IoT.SP-Dev.Framework.CardReader": "0.0.1-alpha.2"
+          "KAL.XFS4IoT.SP-Dev.Framework.CardReader": "0.0.2-alpha.1"
         },
         "runtime": {
           "XFS4IoT.SP.CardReader.dll": {}
+        }
+      },
+      "XFS4IoT.SP.CashDispenser/1.0.0": {
+        "dependencies": {
+          "KAL.XFS4IoT.SP-Dev.Framework.CashDispenser": "0.0.2-alpha.1",
+          "KAL.XFS4IoT.SP-Dev.Framework.CashManagement": "0.0.2-alpha.1"
+        },
+        "runtime": {
+          "XFS4IoT.SP.CashDispenser.dll": {}
         }
       }
     }
@@ -197,40 +234,54 @@
       "serviceable": false,
       "sha512": ""
     },
-    "KAL.XFS4IoT.SP-Dev.Framework.CardReader/0.0.1-alpha.2": {
+    "KAL.XFS4IoT.SP-Dev.Framework.CardReader/0.0.2-alpha.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-m0DDSE6ltBFLsjLTB1xru9CyZJT+cpTlUhUZeWE4UEmo6WO2/qIr9iNcbQr38T4QEzlX0hq6w6Q6O8IqcYldGw==",
-      "path": "kal.xfs4iot.sp-dev.framework.cardreader/0.0.1-alpha.2",
-      "hashPath": "kal.xfs4iot.sp-dev.framework.cardreader.0.0.1-alpha.2.nupkg.sha512"
+      "sha512": "sha512-79g2zvAgpR9vERqhj3Ru84MXb8cndJBy8teLtZZbS2qgJYTDSWjYL23POHVzcg59hhkdn8R7tuaOh41uJ91TJw==",
+      "path": "kal.xfs4iot.sp-dev.framework.cardreader/0.0.2-alpha.1",
+      "hashPath": "kal.xfs4iot.sp-dev.framework.cardreader.0.0.2-alpha.1.nupkg.sha512"
     },
-    "KAL.XFS4IoT.SP-Dev.Framework.Common/0.0.1-alpha.2": {
+    "KAL.XFS4IoT.SP-Dev.Framework.CashDispenser/0.0.2-alpha.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8zYBjDZ/vRhOKtddPuizwj+wTrYfW54mvzVslntlhEzHFWWHPC0QLOOCVhRSD9HzTsusWvnNtkIn4G6lazxxRw==",
-      "path": "kal.xfs4iot.sp-dev.framework.common/0.0.1-alpha.2",
-      "hashPath": "kal.xfs4iot.sp-dev.framework.common.0.0.1-alpha.2.nupkg.sha512"
+      "sha512": "sha512-FPfZ1X3T/9e66m8f8DTv5bETK3TbUvUmA/RTlg9swndl1S5dNErA3h5Fx+aVMxKwChK9QVKHoxghsD0j9Q80xA==",
+      "path": "kal.xfs4iot.sp-dev.framework.cashdispenser/0.0.2-alpha.1",
+      "hashPath": "kal.xfs4iot.sp-dev.framework.cashdispenser.0.0.2-alpha.1.nupkg.sha512"
     },
-    "KAL.XFS4IoT.SP-Dev.Framework.Core/0.0.1-alpha.2": {
+    "KAL.XFS4IoT.SP-Dev.Framework.CashManagement/0.0.2-alpha.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-t3d9b3M39r8SNw4oZljW6eup5aiIgpuTIJyZp/Xg3GuQN0YcMW7XxaGIhhFdepT5X2tWuc//TfEinsWbdsNAgA==",
-      "path": "kal.xfs4iot.sp-dev.framework.core/0.0.1-alpha.2",
-      "hashPath": "kal.xfs4iot.sp-dev.framework.core.0.0.1-alpha.2.nupkg.sha512"
+      "sha512": "sha512-YhZB9D9CDrfaVbYC1ZArk8WgSNLc75tJCES8q+QQiudex9XcksXOyxkpo2EXIYi+eva+yDfqzwviuDe1MGthzQ==",
+      "path": "kal.xfs4iot.sp-dev.framework.cashmanagement/0.0.2-alpha.1",
+      "hashPath": "kal.xfs4iot.sp-dev.framework.cashmanagement.0.0.2-alpha.1.nupkg.sha512"
     },
-    "KAL.XFS4IoT.SP-Dev.Framework.Server/0.0.1-alpha.2": {
+    "KAL.XFS4IoT.SP-Dev.Framework.Common/0.0.2-alpha.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Px3yUBSOnzpVi2HFMGmPZ2q8xcragSEbojOurBK8BCqU8s1tKIkG6b+jJmlh76Hlinz1TzNX6HqbFAb/5y+WPw==",
-      "path": "kal.xfs4iot.sp-dev.framework.server/0.0.1-alpha.2",
-      "hashPath": "kal.xfs4iot.sp-dev.framework.server.0.0.1-alpha.2.nupkg.sha512"
+      "sha512": "sha512-vhX+SQY7VX0PGS9jjaZouLeHpvBufMpA6ukCuxMMhDk0ZhvynbWTe7R7s+oG+XQYm3nnGC0k2DFgvVIlpsHNOQ==",
+      "path": "kal.xfs4iot.sp-dev.framework.common/0.0.2-alpha.1",
+      "hashPath": "kal.xfs4iot.sp-dev.framework.common.0.0.2-alpha.1.nupkg.sha512"
     },
-    "KAL.XFS4IoT.SP-Dev.Framework.ServiceInterfaces/0.0.1-alpha.2": {
+    "KAL.XFS4IoT.SP-Dev.Framework.Core/0.0.2-alpha.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-I4TrM7qhfZO5g/RPdQkZW2FZc0HxFuqVrtiZSrHSEmo7sEDORMs2N3iuNRhWvwxIfoHaw0wp30cr5U/sfA9eqg==",
-      "path": "kal.xfs4iot.sp-dev.framework.serviceinterfaces/0.0.1-alpha.2",
-      "hashPath": "kal.xfs4iot.sp-dev.framework.serviceinterfaces.0.0.1-alpha.2.nupkg.sha512"
+      "sha512": "sha512-MDQ7EaG/5Zw9VbtcIg6Kk9U2y6Xz6+IhPc4apZ4PNpKjDpCWQ31rHFFKlKXMYIHm5KT/QpVX2+8jzcPHm4EKbw==",
+      "path": "kal.xfs4iot.sp-dev.framework.core/0.0.2-alpha.1",
+      "hashPath": "kal.xfs4iot.sp-dev.framework.core.0.0.2-alpha.1.nupkg.sha512"
+    },
+    "KAL.XFS4IoT.SP-Dev.Framework.Server/0.0.2-alpha.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-q30BbMUuHiGdg3+sJxBRUpQp5cYwKm3rQpwTghNvp9Vu/XesF1s9tlEWU9ZWETnrUZspy9dQtILtG0qSslBGKw==",
+      "path": "kal.xfs4iot.sp-dev.framework.server/0.0.2-alpha.1",
+      "hashPath": "kal.xfs4iot.sp-dev.framework.server.0.0.2-alpha.1.nupkg.sha512"
+    },
+    "KAL.XFS4IoT.SP-Dev.Framework.ServiceInterfaces/0.0.2-alpha.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T+L4ipR1ihtLDfM/5koFBybt5Wx8Ugj0LvlLWGT64t9ZDKbR+BvjoAj6fbKYPvfmtri1Xlr21INM/6eRGifPaw==",
+      "path": "kal.xfs4iot.sp-dev.framework.serviceinterfaces/0.0.2-alpha.1",
+      "hashPath": "kal.xfs4iot.sp-dev.framework.serviceinterfaces.0.0.2-alpha.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
@@ -296,6 +347,11 @@
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "XFS4IoT.SP.CardReader/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "XFS4IoT.SP.CashDispenser/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
